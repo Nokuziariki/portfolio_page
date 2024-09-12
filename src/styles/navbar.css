@@ -1,0 +1,25 @@
+.navbar,
+.menulist {
+    display: flex;
+    height: 96px;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 10px;
+    font-size: 16px;
+    z-index: 1000;
+}
+
+.menu {
+    padding: 20px 20px 20px 100px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logopic {
+    position: relative;
+    text-align: center;
+}

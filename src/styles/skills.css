@@ -1,0 +1,18 @@
+.skills {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 150px 0px 150px 0px;
+    height: 350px;
+    margin-top: 200px;
+}
+
+.skill-logo {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+
+i {
+    font-size: 60px;
+}

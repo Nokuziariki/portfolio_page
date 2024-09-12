@@ -1,0 +1,38 @@
+.banner {
+    display: flex;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    margin-top: -96px;
+}
+
+.banner::selection {
+    background-color: transparent;
+    color: inherit;
+}
+
+.canvas {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.noku {
+    color: #b026ff;
+}
+
+.intro {
+    position: absolute;
+    text-align: center;
+    margin-left: 200px;
+}
+
+.intro-text {
+    font-size: 50px;
+}
+
+h2,
+h3,
+h4 {
+    color: #b026ff;
+}

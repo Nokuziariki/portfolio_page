@@ -1,22 +1,23 @@
 import React from "react";
+import "../styles/contact.css";
 
 function Contact() {
     return (
-        <>
-            <div id="contact">
-                <div class="contact-text">
+        <div className="contact">
+            <div className="contact-data">
+                <div className="contact-text">
                     <span>Get in Touch</span>
                 </div>
-                <div class="button-place">
-                    <button class="button">Button</button>
+                <div className="button-place">
+                    <button className="button">Button</button>
                 </div>
             </div>
-            <div class="creator">
+            <div className="creator">
                 <p>
-                    Made by Adam aka <span class="noku">Noku</span>
+                    Made by Adam aka <span className="noku">Noku</span>
                 </p>
             </div>
-        </>
+        </div>
     );
 }
 

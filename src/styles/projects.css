@@ -1,0 +1,56 @@
+.projects {
+    margin: 50px 0px 50px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 100%;
+    transform: rotate(10deg);
+    padding-left: 200px;
+}
+
+/* itt kezdődik a kártyás */
+.proba1,
+.proba2,
+.proba3,
+.proba4 {
+    position: relative;
+    display: flex;
+    border: 2px purple solid;
+    height: 550px;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    margin-left: -400px;
+    z-index: 1;
+}
+
+.proba1 {
+    transform: rotate(-45deg);
+}
+
+.proba2 {
+    transform: rotate(-30deg);
+}
+
+.proba3 {
+    transform: rotate(-15deg);
+}
+
+.proba4 {
+    transform: rotate(0deg);
+}
+
+.proba-kartya {
+    text-align: center;
+    height: 250px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.prj-pic {
+    display: block;
+    margin: 0 auto;
+    width: 450px;
+    background-size: cover;
+}
