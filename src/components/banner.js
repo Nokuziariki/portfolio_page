@@ -18,7 +18,7 @@ function Banner() {
                     <p>
                         Hello! My name is <span className="noku">Noku</span>
                     </p>
-                    <p>I'm a full-stack engineer</p>
+                    <p>I'm a frontend developer</p>
                     <p>This is my portfolio page</p>
                 </div>
             </div>
