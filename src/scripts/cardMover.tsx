@@ -1,5 +1,5 @@
 export function initializeCardMovement() {
-    const cards = document.querySelectorAll(
+    const cards = document.querySelectorAll<HTMLDivElement>(
         ".proba1, .proba2, .proba3, .proba4"
     );
 
@@ -10,12 +10,14 @@ export function initializeCardMovement() {
         card.addEventListener("mouseout", handleMouseOut);
     });
 
-    function handleMouseOver(event) {
-        const hoveredCard = event.currentTarget;
+    function handleMouseOver(event: MouseEvent) {
+        const hoveredCard = event.currentTarget as HTMLDivElement;
         cards.forEach((card) => {
-            card.style.transform = "rotate(0deg) scale(1)";
-            card.style.zIndex = "1";
-            card.style.backgroundColor = "black";
+            if (card instanceof HTMLDivElement) {
+                card.style.transform = "rotate(0deg) scale(1)";
+                card.style.zIndex = "1";
+                card.style.backgroundColor = "black";
+            }
         });
 
         hoveredCard.style.transform = getTransformStyle(hoveredCard);
@@ -24,18 +26,19 @@ export function initializeCardMovement() {
 
         const index = Array.from(cards).indexOf(hoveredCard);
         for (let i = index + 1; i < cards.length; i++) {
-            cards[i].style.transform = getTransformStyle(cards[i], i - index);
+            const card = cards[i] as HTMLDivElement;
+            card.style.transform = getTransformStyle(card, i - index);
         }
     }
 
-    function handleMouseOut(event) {
-        const card = event.currentTarget;
+    function handleMouseOut(event: MouseEvent) {
+        const card = event.currentTarget as HTMLDivElement;
         const index = Array.from(cards).indexOf(card);
         setNormalStyle(card, index);
         cards.forEach((c, i) => setNormalStyle(c, i));
     }
 
-    function setNormalStyle(card, index) {
+    function setNormalStyle(card: HTMLDivElement, index: number) {
         card.style.zIndex = "1";
 
         switch (index) {
@@ -60,7 +63,10 @@ export function initializeCardMovement() {
         }
     }
 
-    function getTransformStyle(card) {
+    function getTransformStyle(
+        card: HTMLDivElement,
+        indexOffset: number = 0
+    ): string {
         const transforms = [
             { rotate: "0deg", scale: "1.25", translateX: "0px" },
             { rotate: "0deg", scale: "1.25", translateX: "0px" },
@@ -68,7 +74,7 @@ export function initializeCardMovement() {
             { rotate: "0deg", scale: "1.25", translateX: "0px" },
         ];
         const index = Array.from(cards).indexOf(card);
-        const transform = transforms[index];
+        const transform = transforms[index + indexOffset] || transforms[0];
         return `rotate(${transform.rotate}) scale(${transform.scale}) translateX(${transform.translateX})`;
     }
 }

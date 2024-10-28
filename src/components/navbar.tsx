@@ -2,7 +2,7 @@ import React from "react";
 import logo from "../assets/logo.png";
 import "../styles/navbar.css";
 
-function Navbar() {
+const Navbar: React.FC = () => {
     return (
         <div className="navbar">
             <div className="logo">
@@ -16,6 +16,6 @@ function Navbar() {
             </ul>
         </div>
     );
-}
+};
 
 export default Navbar;

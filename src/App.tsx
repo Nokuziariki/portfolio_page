@@ -7,7 +7,7 @@ import Skills from "./components/skills";
 import Contact from "./components/contact";
 import Footer from "./components/footer";
 
-function App() {
+const App: React.FC = () => {
     return (
         <div className="App">
             <Navbar />
@@ -19,6 +19,6 @@ function App() {
             <Footer />
         </div>
     );
-}
+};
 
 export default App;

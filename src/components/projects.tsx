@@ -6,7 +6,7 @@ import picture3 from "../assets/picture3.png";
 import picture4 from "../assets/picture4.png";
 import { initializeCardMovement } from "../scripts/cardMover";
 
-function Projects() {
+const Projects: React.FC = () => {
     useEffect(() => {
         initializeCardMovement();
     }, []);
@@ -71,6 +71,6 @@ function Projects() {
             </div>
         </div>
     );
-}
+};
 
 export default Projects;

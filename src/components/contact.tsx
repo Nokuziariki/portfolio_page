@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/contact.css";
 
-function Contact() {
+const Contact: React.FC = () => {
     return (
         <div className="contact">
             <div className="contact-window">
@@ -29,6 +29,6 @@ function Contact() {
             </div>
         </div>
     );
-}
+};
 
 export default Contact;

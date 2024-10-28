@@ -2,12 +2,14 @@ import React, { useEffect, useRef } from "react";
 import { bannerCanvas } from "../scripts/canvas";
 import "../styles/banner.css";
 
-function Banner() {
-    const canvasRef = useRef(null);
+const Banner: React.FC = () => {
+    const canvasRef = useRef<HTMLCanvasElement | null>(null);
 
     useEffect(() => {
         const canvas = canvasRef.current;
-        bannerCanvas(canvas);
+        if (canvas) {
+            bannerCanvas(canvas);
+        }
     }, []);
 
     return (
@@ -24,6 +26,6 @@ function Banner() {
             </div>
         </div>
     );
-}
+};
 
 export default Banner;

@@ -2,7 +2,7 @@ import React from "react";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "../styles/skills.css";
 
-function Skills() {
+const Skills: React.FC = () => {
     return (
         <div className="skills">
             <div className="skill-logo">
@@ -21,6 +21,6 @@ function Skills() {
             </div>
         </div>
     );
-}
+};
 
 export default Skills;

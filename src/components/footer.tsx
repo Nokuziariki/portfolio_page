@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/footer.css";
 
-function Footer() {
+const Footer: React.FC = () => {
     return (
         <div className="creator">
             <p>
@@ -9,6 +9,6 @@ function Footer() {
             </p>
         </div>
     );
-}
+};
 
 export default Footer;
