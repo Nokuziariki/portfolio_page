@@ -4,18 +4,28 @@ import "../styles/contact.css";
 function Contact() {
     return (
         <div className="contact">
-            <div className="contact-data">
-                <div className="contact-text">
-                    <span>Get in Touch</span>
+            <div className="contact-window">
+                <div className="contact-window-left-side">
+                    <div className="contact-window-title">
+                        <h2 className="the-title">Get in Touch</h2>
+                    </div>
+                    <div>
+                        <form></form>
+                    </div>
                 </div>
-                <div className="button-place">
-                    <button className="button">Button</button>
+                <div className="contact-window-right-side">
+                    <div>
+                        <h2 className="the-title">Message</h2>
+                    </div>
+                    <div>
+                        <textarea
+                            id="message"
+                            name="message"
+                            placeholder="Write text here..."
+                        ></textarea>
+                        <button className="button-box">Send</button>
+                    </div>
                 </div>
-            </div>
-            <div className="creator">
-                <p>
-                    Made by Adam aka <span className="noku">Noku</span>
-                </p>
             </div>
         </div>
     );

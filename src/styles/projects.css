@@ -1,11 +1,11 @@
 .projects {
-    margin: 50px 0px 50px 0px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 500px;
+    height: 800px;
     width: 100%;
     padding-left: 200px;
+    border: 1px red solid;
 }
 
 /* itt kezdődik a kártyás */
