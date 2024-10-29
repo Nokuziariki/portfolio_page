@@ -20,7 +20,7 @@ const About: React.FC = () => {
     }, []);
 
     return (
-        <div className="about">
+        <div className="about" id="about">
             <div className="about-left">
                 <h2 className="about-title">About Me</h2>
                 <div id="text" className="about-text"></div>

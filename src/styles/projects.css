@@ -2,13 +2,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 800px;
     width: 100%;
-    padding-left: 200px;
-    border: 1px red solid;
+    min-height: 100vh;
 }
 
-/* itt kezdődik a kártyás */
 .proba1,
 .proba2,
 .proba3,
@@ -20,9 +17,7 @@
     align-items: center;
     justify-content: center;
     background-color: black;
-    margin-left: -400px;
     z-index: 1;
-    transition: transform 0.3s ease, z-index 0s;
 }
 
 .proba1 {
@@ -50,7 +45,6 @@
 
 .prj-pic {
     display: block;
-    margin: 0 auto;
+    margin: 0;
     width: 450px;
-    background-size: cover;
 }

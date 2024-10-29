@@ -91,7 +91,6 @@ export function bannerCanvas(canvas: HTMLCanvasElement) {
             this.x += this.dx;
             this.y += this.dy;
 
-            // interactivity
             if (
                 mouse.x &&
                 mouse.y &&

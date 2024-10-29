@@ -12,36 +12,22 @@ const Projects: React.FC = () => {
     }, []);
 
     return (
-        <div className="projects">
+        <div className="projects" id="projects">
             <div className="proba1">
                 <div className="proba-kartya">
                     <div>
-                        <h3>Project 4</h3>
+                        <h3>Project 1</h3>
                     </div>
                     <div>
                         <img
                             className="prj-pic"
-                            src={picture4}
-                            alt="Project 4"
+                            src={picture1}
+                            alt="Project 1"
                         />
                     </div>
                 </div>
             </div>
             <div className="proba2">
-                <div className="proba-kartya">
-                    <div>
-                        <h3>Project 3</h3>
-                    </div>
-                    <div>
-                        <img
-                            className="prj-pic"
-                            src={picture3}
-                            alt="Project 3"
-                        />
-                    </div>
-                </div>
-            </div>
-            <div className="proba3">
                 <div className="proba-kartya">
                     <div>
                         <h3>Project 2</h3>
@@ -55,16 +41,30 @@ const Projects: React.FC = () => {
                     </div>
                 </div>
             </div>
-            <div className="proba4">
+            <div className="proba3">
                 <div className="proba-kartya">
                     <div>
-                        <h3>Project 1</h3>
+                        <h3>Project 3</h3>
                     </div>
                     <div>
                         <img
                             className="prj-pic"
-                            src={picture1}
-                            alt="Project 1"
+                            src={picture3}
+                            alt="Project 3"
+                        />
+                    </div>
+                </div>
+            </div>
+            <div className="proba4">
+                <div className="proba-kartya">
+                    <div>
+                        <h3>Project 4</h3>
+                    </div>
+                    <div>
+                        <img
+                            className="prj-pic"
+                            src={picture4}
+                            alt="Project 4"
                         />
                     </div>
                 </div>

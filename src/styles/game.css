@@ -1,0 +1,15 @@
+.game {
+    margin-top: -125px;
+}
+
+.start-button {
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    padding: 10px;
+    background-color: rgb(59, 59, 59);
+}
+
+.start-button:hover {
+    background-color: rgb(75, 74, 74);
+}

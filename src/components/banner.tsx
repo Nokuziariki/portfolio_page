@@ -13,7 +13,7 @@ const Banner: React.FC = () => {
     }, []);
 
     return (
-        <div className="banner">
+        <div className="banner" id="banner">
             <canvas className="canvas" ref={canvasRef}></canvas>
             <div className="intro">
                 <div className="intro-text">

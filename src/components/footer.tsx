@@ -3,9 +3,9 @@ import "../styles/footer.css";
 
 const Footer: React.FC = () => {
     return (
-        <div className="creator">
-            <p>
-                Made by Adam aka <span className="noku">Noku</span>
+        <div className="footer">
+            <p className="footer-text">
+                Made by <span className="noku">Noku</span>
             </p>
         </div>
     );
