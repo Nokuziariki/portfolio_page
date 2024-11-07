@@ -4,6 +4,7 @@
     align-items: center;
     width: 100%;
     min-height: 100vh;
+    flex-wrap: wrap;
 }
 
 .about-left,
@@ -24,4 +25,37 @@
 
 .about-title {
     padding: 10px;
+}
+
+.codePicture {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+    .about {
+        align-items: flex-start;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 50px;
+
+    }
+
+    .about-left,
+    .about-right {
+        width: 90%;
+        height: 40vh;
+        padding-left: 30px;
+    }
+
+    .about-title {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .codePicture {
+        max-height: 400px;
+    }
 }

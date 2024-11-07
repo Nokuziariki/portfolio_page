@@ -1,4 +1,6 @@
 export function initializeCardMovement() {
+    if (window.innerWidth <= 601) return;
+
     const cards = document.querySelectorAll<HTMLDivElement>(
         ".proba1, .proba2, .proba3, .proba4"
     );

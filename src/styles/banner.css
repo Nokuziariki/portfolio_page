@@ -24,15 +24,51 @@
 .intro {
     position: absolute;
     text-align: center;
-    margin-left: 200px;
+    margin-left: 300px;
 }
 
 .intro-text {
-    font-size: 50px;
+    font-size: 60px;
 }
 
 h2,
 h3,
 h4 {
     color: #b026ff;
+}
+
+.pictureOfMe {
+    width: 600px;
+    max-height: 570px;
+    position: absolute;
+    top: 385px;
+    right: 0px;
+    white-space: pre;
+    font-family: monospace;
+    font-size: 6px;
+    line-height: 1;
+    user-select: none;
+}
+
+@media (max-width: 600px) {
+    .banner {
+        flex-direction: column;
+        margin-top: -100;
+        min-height: 70vh;
+    }
+
+    .intro {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0;
+        padding: 20px;
+        text-align: center;
+        min-height: 90vh;
+        width: 100%;
+    }
+
+    .intro-text {
+        font-size: 36px;
+    }
 }

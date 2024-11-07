@@ -2,6 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     width: 100%;
     min-height: 100vh;
 }
@@ -47,4 +48,29 @@
     display: block;
     margin: 0;
     width: 450px;
+}
+
+@media (max-width: 600px) {
+    .projects {
+        flex-direction: column;
+    }
+
+    .proba1,
+    .proba2,
+    .proba3,
+    .proba4 {
+        width: 100%;
+        height: auto;
+        margin: 20px 0;
+    }
+
+    .proba-kartya {
+        height: auto;
+    }
+
+    .prj-pic {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
 }

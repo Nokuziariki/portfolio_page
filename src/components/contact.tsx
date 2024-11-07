@@ -123,7 +123,7 @@ const Contact: React.FC = () => {
                                 htmlFor="checkbox"
                                 className="contact-checkbox-label contact-item"
                             >
-                                This is a checkbox -- it has no role (YET)
+                                It has no role (YET)
                             </label>
                         </div>
                         <button

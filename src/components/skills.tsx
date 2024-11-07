@@ -14,21 +14,25 @@ import "../styles/skills.css";
 const Skills: React.FC = () => {
     return (
         <div className="skills" id="skills">
-            <div className="skill-logo">
-                <FaHtml5 />
-                <FaCss3Alt />
-                <FaJs />
-                <SiTypescript />
-                <FaReact />
-                <RiNextjsFill />
-                <FaWordpress />
-                <FaGitAlt />
+            <div className="logoslide">
+                <FaHtml5 className="skill-logo-item" />
+                <FaCss3Alt className="skill-logo-item" />
+                <FaJs className="skill-logo-item" />
+                <SiTypescript className="skill-logo-item" />
+                <FaReact className="skill-logo-item" />
+                <RiNextjsFill className="skill-logo-item" />
+                <FaWordpress className="skill-logo-item" />
+                <FaGitAlt className="skill-logo-item" />
             </div>
-            <div className="skill-intro">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
+            <div className="logoslide">
+                <FaHtml5 className="skill-logo-item" />
+                <FaCss3Alt className="skill-logo-item" />
+                <FaJs className="skill-logo-item" />
+                <SiTypescript className="skill-logo-item" />
+                <FaReact className="skill-logo-item" />
+                <RiNextjsFill className="skill-logo-item" />
+                <FaWordpress className="skill-logo-item" />
+                <FaGitAlt className="skill-logo-item" />
             </div>
         </div>
     );

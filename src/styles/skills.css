@@ -2,14 +2,50 @@
     position: relative;
     width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+    overflow: hidden;
+    min-height: 160px;
+    margin: 100px 0;
+}
+.skills:before,
+.skills:after {
+    position: absolute;
+    top: 0;
+    width: 300px;
+    height: 100%;
+    content: "";
+    z-index: 2;
 }
 
-.skill-logo {
-    width: 60%;
-    display: flex;
+.skills:before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), black);
+}
+
+.skills::after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), black);
+}
+
+.logoslide {
+    white-space: nowrap;
     justify-content: space-around;
-    font-size: 60px;
+    animation: 20s slide infinite linear;
+}
+
+.skills:hover .logoslide {
+    animation-play-state: paused;
+}
+
+.skill-logo-item {
+    margin: 0 85px;
+    font-size: 160px;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
 }
